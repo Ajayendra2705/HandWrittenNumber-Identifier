@@ -1,0 +1,134 @@
+/* ---------- GLOBAL BACKGROUND ---------- */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #7f7fff, #96e0ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px;
+  overflow-x: hidden; /* prevent sideways scroll */
+}
+
+.page {
+  width: 100%;
+  max-width: 600px;  /* IMPORTANT: prevent exceeding screen */
+  text-align: center;
+  margin: auto;
+}
+
+/* ---------- TITLES ---------- */
+.title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0px;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+/* ---------- UPLOAD BOX ---------- */
+.upload-box {
+  border: 2px dashed rgba(255,255,255,0.8);
+  padding: 30px;
+  border-radius: 14px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(8px);
+  transition: 0.3s ease;
+  max-width: 100%;     /* responsive */
+  box-sizing: border-box;
+}
+
+.upload-box:hover {
+  background: rgba(255,255,255,0.4);
+  transform: scale(1.01);
+}
+
+.upload-icon {
+  font-size: 2.5rem;
+}
+
+.upload-label p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* ---------- GLASS CARD ---------- */
+.glass-card {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* ---------- IMAGE PREVIEW ---------- */
+.preview-img {
+  width: 100%;               /* scale to container */
+  max-height: 300px;         /* prevent overflow */
+  object-fit: contain;       /* keep image inside */
+  border-radius: 10px;
+}
+
+/* ---------- BUTTON ---------- */
+.detect-btn {
+  margin-top: 20px;
+  padding: 12px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  background: #0044ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+  max-width: 100%;
+}
+
+.detect-btn:hover {
+  background: #002ecc;
+}
+
+/* ---------- LOADER ---------- */
+.loader {
+  margin: 20px auto;
+  border: 5px solid #ddd;
+  border-top: 5px solid #0044ff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- RESULT BOX ---------- */
+.result-box {
+  margin-top: 25px;
+  padding: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.result-value {
+  font-size: 2.5rem;       /* smaller to avoid overflow */
+  font-weight: 900;
+  color: #0044ff;
+  margin-top: 10px;
+  word-break: break-all;   /* important: breaks long numbers */
+}
