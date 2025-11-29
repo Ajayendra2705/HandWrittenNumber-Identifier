@@ -1,0 +1,9 @@
+{
+  "name": "hw-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^0.3.0",
+    "formidable": "^3.5.3"
+  }
+}
